@@ -10,6 +10,7 @@ import Reactions from './components/Reactions'
 
 //export const createHeartEmoji = (payload) => api.post(`/createHeart`, payload)
 //const ENDPOINT = 'http://192.168.1.191:8000'
+const IPAdress = 'http://192.168.1.191'
 
 const App: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -20,18 +21,18 @@ const App: React.FC = () => {
   const [fullScreen, setFullScreen] = useState(false)
 
   const callAPI = () => {
-    fetch('http://192.168.1.191:8000/testAPI')
+    fetch(IPAdress + ':8000/testAPI')A
       .then(res => res.text())
       .then(res => setAPIResponse(res))
   }
 
   const increaseCount = async id => {
-    await axios.put('http://192.168.1.191:8000/api/emoji/' + id).then(res => {
+    await axios.put(IPAdress + ':8000/api/emoji/' + id).then(res => {
       setHeartCount(res.data.count)
     })
   }
   const getEmojis = async () => {
-    await axios.get('http://192.168.1.191:8000/api/emojis').then(res => {
+    await axios.get(IPAdress + ':8000/api/emojis').then(res => {
       setHeartCount(res.data.data[0].count)
     })
   }
