@@ -9,8 +9,8 @@ const bodyParser = require('body-parser')
 const http = require('http')
 const socketIo = require('socket.io')
 
-const db = require('./db')
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+//const db = require('./db')
+//db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const emojiRouter = require('./routes/emojiroutes')
 
 var indexRouter = require('./routes/index')

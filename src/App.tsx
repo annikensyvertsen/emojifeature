@@ -21,7 +21,7 @@ const App: React.FC = () => {
   const [fullScreen, setFullScreen] = useState(false)
 
   const callAPI = () => {
-    fetch(IPAdress + ':8000/testAPI')A
+    fetch(IPAdress + ':8000/testAPI')
       .then(res => res.text())
       .then(res => setAPIResponse(res))
   }
