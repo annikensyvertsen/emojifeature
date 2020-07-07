@@ -1,18 +1,35 @@
-Clone the project and navigate into the correct folder.
+# EMOJIFEATURE
+This is an early prototype for a feature that is being tested for a potential streaming platform. The purpose is to test whether or not the audience is interested in using their phone as a personal aid during a concert. If you type the same IP-address on severel browsers (phones), multiple people can try the feature out at the same time to get an increased effect of a community and a visualize the energi level. 
+
+## Setting up the project
+
+Start by cloning the project.
+Navigate into the folder on your computer where you want to have the project.
+
+`git clone github.com/annikensyvertsen/emojifeature` 
+
 Make sure you have npm installed 
 
+Navigate into the the root folder.
+
+`cd emojifeature` 
+
 ## Set up backend
-cd api
-npm install
-npm start 
+`cd api` 
+
+`npm install` 
+
+`npm start` 
 
 Runs the app in the development mode.<br />
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## Set up frontend
-cd frontend
-npm install
-npm start
+`cd frontend` 
+
+`npm install` 
+
+`npm start` 
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
