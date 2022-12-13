@@ -13,7 +13,7 @@
     "@types/react-mic": "^12.4.2",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "rc-tween-one": "^2.7.2",
     "react": "^16.13.1",
     "react-audio-spectrum": "^0.1.0",
